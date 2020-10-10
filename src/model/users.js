@@ -16,7 +16,7 @@ const userModel = mongoose.model('users', userSchema);
 
 createUser = async (user) => {
     try {
-        console.log("user >>>>", user)
+        
         const newUser = await userModel.create(user);
         console.log("newUser >>", newUser);
         return newUser;
